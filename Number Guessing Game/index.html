@@ -8,23 +8,18 @@
     <title>Number Guessing Game</title>
 </head>
 <body>
-    <div class="numbers">
-        <p>Number Pool: 0-10</p>
+    <h1>Number Guessing Game</h1>
+    <div>
+        <h2>Number Range: 0-10</h2>
+        <p>Human Score: <span id="humanScr">0</span></p>
+        <p>Computer Score: <span id="computerScr">0</span></p>
     </div>
-    <div class="score">
-        <p id="humanScr"></p>
-        <p id="computerScr"></p>
-    </div>
-    <div class="randomNumber">
-        <p id="outputNumber"></p>
-    </div>
-    <div class="human">
-        <input type="text" id="guess" Value="Your Guess">
+    <div>
+        <input type="number" value="0" id="guess" min="0" max="10">
         <button type="submit" id="submit">Submit</button>
-        <p id="humanOut"></p>
-    </div>
-    <div class="computer">
-        <p><span id="computer"></span></p>
+        <p>Random Number: <span id="outputNumber"></span></p>
+        <p>Human Guess: <span id="humanOut"></span></p>
+        <p>Computer Guess: <span id="computer"></span></p>
     </div>
 </body>
 <script src="js/app.js"></script>
