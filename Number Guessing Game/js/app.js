@@ -26,4 +26,15 @@ document.getElementById(`submit`).addEventListener(`click`, function(){
     } else if (humanDiff === computerDiff){
      return;
     }
+    if (humanScr === 10){
+        document.getElementById(`winner`).innerHTML = `Human`;
+        document.getElementById(`submit`).disabled = true;
+    } else if (computerScr === 10){
+        document.getElementById(`winner`).innerHTML = `Computer`;
+        document.getElementById(`submit`).disabled = true;
+    }
+});
+
+document.getElementById(`reset`).addEventListener(`click`, function(){
+    location.reload();
 });
