@@ -11,12 +11,15 @@
     <h1>Number Guessing Game</h1>
     <div>
         <h2>Number Range: 0-10</h2>
+        <p>The first player to reach 10 points wins!</p>
         <p>Human Score: <span id="humanScr">0</span></p>
         <p>Computer Score: <span id="computerScr">0</span></p>
+        <p>Winner: <span id="winner"></span></p>
     </div>
     <div>
         <input type="number" value="0" id="guess" min="0" max="10">
         <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
         <p>Random Number: <span id="outputNumber"></span></p>
         <p>Human Guess: <span id="humanOut"></span></p>
         <p>Computer Guess: <span id="computer"></span></p>
